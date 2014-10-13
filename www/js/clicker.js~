@@ -1,0 +1,8 @@
+var pdf = 0;
+function click(){
+	pdf+=1
+	alert("Click");	
+	document.getElementById("counter").innerHTML="newtext";
+
+
+}   

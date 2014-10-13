@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>SoftClicker</title>
+    </head>
+    <body>
+        
+        
+        <div id="game">
+            <div id="infobox" class="infobox"><div id="popup" class="popup"></div></div>
+    	    <div id="counter" class="counter">0</div>
+            <div id="note"class="clicker" ontouchstart="Clicker.click()"><img src="img/note.png"></div>
+            <button type="button" class="b_upgrade" onclick="menu_upgrades()">Upgrades</button> 
+            <script type="text/javascript" src="cordova.js"></script>
+            <script type="text/javascript" src="js/index.js"></script>
+            <script type="text/javascript" src="js/clicker.js"></script>
+        </div>
+
+        <div id="upgrades">
+            <div id="infobox" class="infobox"><div id="popup" class="popup">Upgrades</div></div>
+            <button type="button" class="b_voltar" onclick="menu_voltar()">Voltar</button>
+            <ul>
+                  <li>Link 1</li>
+                  <li>Link 2</li>
+                  <li>Link 3</li>
+                  <li>Link 4</li>
+                  <li>Link 5</li>
+                  <li>Link 6</li> 
+                  <li>Link 7</li> 
+                  <li>Link 8</li>
+                  <li>Link 9</li>
+                  <li>Link 10</li>
+                  <li>Link 11</li>
+                  <li>Link 13</li>
+                  <li>Link 13</li>
+            </ul>           
+
+
+            <script type="text/javascript" src="cordova.js"></script>
+            <script type="text/javascript" src="js/index.js"></script>
+            <script type="text/javascript" src="js/clicker.js"></script>
+        </div>
+
+
+        <script type="text/javascript">
+            app.initialize();
+            game();
+        </script>
+    </body>
+</html>
