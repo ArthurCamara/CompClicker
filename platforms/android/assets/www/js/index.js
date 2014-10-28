@@ -26,6 +26,7 @@ var app = {
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
+
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     // deviceready Event Handler
@@ -33,6 +34,7 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
+        setupScale(480);
         app.receivedEvent('deviceready');
     },
     // Update DOM on a Received Event
@@ -47,3 +49,50 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
+//-------------------------------------------------------------
+//----- Correções de escala
+//-------------------------------------------------------------
+/*
+window.addEventListener("touchstart", function(e) {
+    e.preventDefault();
+}, false);
+
+
+window.addEventListener("touchmove", function(e) {
+    e.preventDefault();
+}, false);
+*/
+/*
+ * Make sure that the device is scaled so that it is at least minWidth px in width
+ * in any orientation. This is done by setting the zoom appropriately.
+ * Right now, we only need this on Android, which supports zoom.
+ * Plan B is to use transforms with scale and transform-origin.
+ */
+function setupScale (minWidth) {
+    var viewWidth = window.outerWidth;//Math.max(document.documentElement.clientWidth, window.outerWidth);
+    var viewHeight =window.outerHeight; //Math.max(document.documentElement.clientHeight, window.outerHeight);
+    var portWidth = Math.min(viewWidth, viewHeight);
+    var landWidth = Math.max(viewWidth, viewHeight);
+
+    var fixScale = function () {
+        if (Math.abs(window.orientation) != 90) {
+            // portrait
+            document.body.style.zoom = portWidth / minWidth;
+        } else if (landWidth < minWidth) {
+            // landscape, but < minWidth
+            document.body.style.zoom = landWidth / minWidth;
+        } else {
+            // landscape >= minWidth. Turn off zoom.
+            // This will make things "larger" in landscape.
+            document.body.style.zoom = 1;
+        }
+    };
+    /*
+    if (gPortWidth >= minWidth) {
+        return;     // device is greater than minWidth even in portrait.
+    }*/
+    fixScale();                             // fix the current scale.       
+    window.onorientationchange = fixScale;  // and when orientation is changed
+}
+//-------------------------------------------------------------

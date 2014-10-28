@@ -24,7 +24,7 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#E4E4E4;
+    /*background-color:#E4E4E4;
     background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
     background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
     background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
@@ -35,6 +35,7 @@ body {
         color-stop(0, #A7A7A7),
         color-stop(0.51, #E4E4E4)
     );
+    */
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
@@ -45,30 +46,98 @@ body {
     width:100%;
 }
 
-.b_upgrade {
-    background:transparent center;
-    position:absolute;       
-    left:70%;
-    top:80%;           
+.upbox {
+ border:2px solid #ccc; width:480px; height: 600px; overflow-y: scroll; 
 }
+
+.button_up {
+    background:transparent center;
+    overflow:visible;
+    position:absolute;       
+    left:68px;
+    top:600px;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:20px;           
+}
+
+.b_cert {
+    background:transparent center;
+    overflow:visible;
+    position:absolute;       
+    left:68px;
+    top:650px;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:25px;           
+}
+
+.b_list {
+    background:transparent center;
+    overflow:visible;
+    position:relative;       
+    left:0px;
+    top:20px;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    text-align: left;
+    font-size:25px;
+    margin-bottom: 50px;
+    margin-right: 50px;           
+}
+
+.b_quest {
+    background:transparent center;
+    overflow:visible;
+    position:relative;       
+    left:0px;
+    top:20px;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:25px;
+    margin-bottom: 50px;         
+}
+
+
+.b_func {
+    background:transparent center;
+    overflow:visible;
+    position:absolute;       
+    left:68px;
+    top:600px;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:25px;           
+}
+
 .b_voltar {
     background:transparent center;
     position:absolute;       
-    left:70%;
-    top:80%;           
+    left:400px;
+    top:700px;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:25px;            
+}
+
+
+.start_screen {
+  width: 480px;
+  height: 800px;
+  background-image: url(../img/start.png);
+  background-size: 100% 100%;
+}
+
+.game {
+  width: 480px;
+  height: 800px;
+  background-image: url(../img/bg2.png);
+  background-size: 100% 100%;
 }
 
 .clicker {
-    background:transparent center;
-    position:absolute;       
-    left:30%;
-    top:50%;           
+  position: absolute;
+  left: 94px;
+  top:370px;
+  width: 123px;
+  height: 156px;
+  background-image: url(../img/tela.png);
+  background-size: contain;
 }
-.clicker img{
-    width:70%;
-    height:70%;
-    max-width: 70%
-    } 
 
 .counter{
     position:absolute;             
@@ -82,32 +151,39 @@ body {
     text-align:center;
 }
 
-h1 {
+
+.timer{
+    position:absolute;             
+    left:50%;
+    top:20%;
     font-size:24px;
     font-weight:normal;
+    margin:2px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
+
+h1 {
+    font-size:24px;
+    /*font-weight:normal;*/
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     margin:0px;
     overflow:visible;
     padding:0px;
     text-align:center;
 }
 
-.event {
-    border-radius:4px;
-    -webkit-border-radius:4px;
-    color:#FFFFFF;
-    font-size:12px;
-    margin:0px 30px;
-    padding:2px 0px;
-}
-
-.event.listening {
-    background-color:#333333;
-    display:block;
-}
-
-.event.received {
-    background-color:#4B946A;
-    display:none;
+h2 {
+    font-size:60px;
+    /*font-weight:normal;*/
+    font-family:'Ubuntu','HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    margin:10px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
 }
 
 @keyframes fade {
@@ -140,9 +216,46 @@ padding:0px;
 text-align:center;
 }
 
-.infobox {
-position: absolute;
-width:100%; 
-background-image: url("../img/infobox.png") no-repeat center top;
+
+/*
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    // Chrome, Safari, Opera
+    -webkit-animation-name: myfirst;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    // Standard syntax 
+    animation-name: myfirst;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
 }
 
+//Chrome, Safari, Opera
+@-webkit-keyframes myfirst {
+    0%   {background:red; left:0px; top:0px;}
+    25%  {background:yellow; left:200px; top:0px;}
+    50%  {background:blue; left:200px; top:200px;}
+    75%  {background:green; left:0px; top:200px;}
+    100% {background:red; left:0px; top:0px;}
+}
+
+// Standard syntax 
+@keyframes myfirst {
+    0%   {background:red; left:0px; top:0px;}
+    25%  {background:yellow; left:200px; top:0px;}
+    50%  {background:blue; left:200px; top:200px;}
+    75%  {background:green; left:0px; top:200px;}
+    100% {background:red; left:0px; top:0px;}
+}
+*/

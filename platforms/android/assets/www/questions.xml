@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<SoftClicker>
+
+	<estagiario>
+		<question>
+				<txt>Esta questão deverá ser sobre:</txt>
+				<alt is="F">Outros</alt>
+				<alt is="F">Programador</alt>
+				<alt is="F">Analista</alt>
+				<alt is="T">Estagiário</alt>
+		</question>
+	</estagiario>
+
+	<analista>
+		<question>
+				<txt>Esta questão deverá ser sobre:</txt>
+				<alt is="F">Outros</alt>
+				<alt is="F">Programador</alt>
+				<alt is="T">Analista</alt>
+				<alt is="F">Estagiário</alt>
+		</question>
+	</analista>
+
+	<programador>
+		<question>
+				<txt>Esta questão deverá ser sobre:</txt>
+				<alt is="F">Outros</alt>
+				<alt is="T">Programador</alt>
+				<alt is="F">Analista</alt>
+				<alt is="F">Estagiário</alt>
+		</question>
+	</programador>
+
+	<cmmi2>
+		<question>
+				<txt>Esta questão deverá ser sobre:</txt>
+				<alt is="T">CMMI2</alt>
+				<alt is="F">CMMI3</alt>
+				<alt is="F">CMMI4</alt>
+				<alt is="F">CMMI5</alt>
+		</question>
+	</cmmi2>
+	
+	<cmmi3>
+		<question>
+				<txt>Esta questão deverá ser sobre:</txt>
+				<alt is="F">CMMI2</alt>
+				<alt is="T">CMMI3</alt>
+				<alt is="F">CMMI4</alt>
+				<alt is="F">CMMI5</alt>
+		</question>
+	</cmmi3>
+
+	<cmmi4>
+		<question>
+				<txt>Esta questão deverá ser sobre:</txt>
+				<alt is="F">CMMI2</alt>
+				<alt is="F">CMMI3</alt>
+				<alt is="T">CMMI4</alt>
+				<alt is="F">CMMI5</alt>
+		</question>
+	</cmmi4>
+
+	<cmmi5>
+		<question>
+				<txt>Esta questão deverá ser sobre:</txt>
+				<alt is="F">CMMI2</alt>
+				<alt is="F">CMMI3</alt>
+				<alt is="F">CMMI4</alt>
+				<alt is="T">CMMI5</alt>
+		</question>
+	</cmmi5>
+
+
+</SoftClicker>

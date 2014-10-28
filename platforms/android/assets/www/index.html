@@ -25,52 +25,127 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <meta name="viewport" content="user-scalable=0, initial-scale=1, maximum-scale=2, minimum-scale=0, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>SoftClicker</title>
     </head>
     <body>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/clicker.js"></script>
+
+        <div id="start" class="start_screen">
+            <h2>SoftClicker</h2>
+            <h1>SnowWhite</h1>
+            <button id="teste" type="button" class="b_func" onclick="menu('missao')">START</button> 
+        </div>
         
         
-        <div id="game">
-            <div id="infobox" class="infobox"><div id="popup" class="popup"></div></div>
+        <div id="game" class="game">
     	    <div id="counter" class="counter">0</div>
-            <div id="note"class="clicker" ontouchstart="Clicker.click()"><img src="img/note.png"></div>
-            <button type="button" class="b_upgrade" onclick="menu_upgrades()">Upgrades</button> 
-            <script type="text/javascript" src="cordova.js"></script>
-            <script type="text/javascript" src="js/index.js"></script>
-            <script type="text/javascript" src="js/clicker.js"></script>
+            <div id="timer" class="timer">5000</div>
+            <div id="tela" class="clicker" ontouchstart="Clicker.click()"></div>
+            <button type="button" class="b_func" onclick="menu('funcionarios')">Funcionários</button> 
+            <button type="button" class="b_cert" onclick="menu('certificados')">Certificados</button> 
         </div>
 
-        <div id="upgrades">
-            <div id="infobox" class="infobox"><div id="popup" class="popup">Upgrades</div></div>
-            <button type="button" class="b_voltar" onclick="menu_voltar()">Voltar</button>
-            <ul>
-                  <li>Link 1</li>
-                  <li>Link 2</li>
-                  <li>Link 3</li>
-                  <li>Link 4</li>
-                  <li>Link 5</li>
-                  <li>Link 6</li> 
-                  <li>Link 7</li> 
-                  <li>Link 8</li>
-                  <li>Link 9</li>
-                  <li>Link 10</li>
-                  <li>Link 11</li>
-                  <li>Link 13</li>
-                  <li>Link 13</li>
-            </ul>           
-
-
-            <script type="text/javascript" src="cordova.js"></script>
-            <script type="text/javascript" src="js/index.js"></script>
-            <script type="text/javascript" src="js/clicker.js"></script>
+        <div id="certificados">
+            <h1>Certificados</h1>
+            <div class="upbox">
+                 <ul style="list-style-type:none">
+                    <li><button type="button" class="b_list" onclick="comprar('cmmi2')">
+                        <span style="text-decoration: underline; font-weight: bold;">CMMI 2</span><br>
+                        <small><span style="text-decoration: underline;">Custo:</span>200<br>
+                        <span style="text-decoration: underline;">Dependencias:</span>Nenhuma<br>
+                        <span style="text-decoration: underline;">Características:</span>Aumenta
+                        o rendimento em 10$/segundo</small><br>
+                    </button></li>
+                    <li><button type="button" class="b_list" onclick="comprar('cmmi3')">
+                        <span style="text-decoration: underline; font-weight: bold;">CMMI 3</span><br>
+                        <small><span style="text-decoration: underline;">Custo:</span>300<br>
+                        <span style="text-decoration: underline;">Dependencias:</span>CMMI 2<br>
+                        <span style="text-decoration: underline;">Características:</span>Aumenta
+                        o rendimento em 20$/segundo</small><br>
+                    </button></li>
+                    <li><button type="button" class="b_list" onclick="comprar('cmmi4')">
+                        <span style="text-decoration: underline; font-weight: bold;">CMMI 4</span><br>
+                        <small><span style="text-decoration: underline;">Custo:</span>400<br>
+                        <span style="text-decoration: underline;">Dependencias:</span>CMMI 3<br>
+                        <span style="text-decoration: underline;">Características:</span>Aumenta
+                        o rendimento em 30$/segundo</small><br>
+                    </button></li>
+                    <li><button type="button" class="b_list" onclick="comprar('cmmi5')">
+                        <span style="text-decoration: underline; font-weight: bold;">CMMI 5</span><br>
+                        <small><span style="text-decoration: underline;">Custo:</span>500<br>
+                        <span style="text-decoration: underline;">Dependencias:</span>CMMI 4<br>
+                        <span style="text-decoration: underline;">Características:</span>Aumenta
+                        o rendimento em 40$/segundo</small><br>
+                    </button></li>
+                </ul> 
+            </div>
+            <button type="button" class="b_voltar" onclick="menu('voltar')">Voltar</button> 
         </div>
 
+        <div id="missao">
+            <h1 id="functext">Escolha a missão:</h1>
+            <div class="upbox">
+                 <ul style="list-style-type:none">
+                    <li><button type="button" class="b_list" onclick="menu('game')">
+                        <span style="text-decoration: underline; font-weight: bold;">Missão 1:</span><br>
+                        <small><span style="text-decoration: underline;">Software de Padaria</span><br>
+                        <span style="text-decoration: underline;">Orçamento Requerido:</span>$5000<br>
+                        <span style="text-decoration: underline;">Tempo:</span>5:00 minutos</small><br>
+                    </button></li>
+                </ul> 
+            </div>
+        </div>
+
+        <div id="funcionarios">
+            <h1 id="functext">Funcionários</h1>
+            <div class="upbox">
+                 <ul style="list-style-type:none">
+                    <li><button type="button" class="b_list" onclick="comprar('estagiario')">
+                        <span style="text-decoration: underline; font-weight: bold;">Estagiário</span><br>
+                        <small><span style="text-decoration: underline;">Custo:</span>10<br>
+                        <span style="text-decoration: underline;">Dependencias:</span>Nenhuma<br>
+                        <span style="text-decoration: underline;">Características:</span>Aumenta
+                        o rendimento em 1$/segundo</small><br>
+                    </button></li>
+                    <li><button type="button" class="b_list" onclick="comprar('programador')">
+                        <span style="text-decoration: underline; font-weight: bold;">Programador</span><br>
+                        <small><span style="text-decoration: underline;">Custo:</span>20<br>
+                        <span style="text-decoration: underline;">Dependencias:</span>Nenhuma<br>
+                        <span style="text-decoration: underline;">Características:</span>Aumenta
+                        o rendimento em 2$/segundo</small><br>
+                    </button> </li>
+                    <li><button type="button" class="b_list" onclick="comprar('analista')">
+                        <span style="text-decoration: underline; font-weight: bold;">Analista</span><br>
+                        <small><span style="text-decoration: underline;">Custo:</span>30<br>
+                        <span style="text-decoration: underline;">Dependencias:</span>Nenhuma<br>
+                        <span style="text-decoration: underline;">Características:</span>Aumenta
+                        o rendimento em 3$/segundo</small><br>
+                    </button></li>
+                </ul> 
+            </div>
+            <button type="button" class="b_voltar" onclick="menu('voltar')">Voltar</button> 
+        </div>
+
+        <div id="question">
+            <h1 id="qtext"></h1>
+            <div class="upbox">
+                 <ul style="list-style-type:none">
+                    <li><button id="alt1" type="button" class="b_quest" onclick="check('0')"></button></li>
+                    <li><button id="alt2" type="button" class="b_quest" onclick="check('1')"></button></li>
+                    <li><button id="alt3" type="button" class="b_quest" onclick="check('2')"></button></li>
+                    <li><button id="alt4" type="button" class="b_quest" onclick="check('3')"></button></li>
+                </ul> 
+            </div>
+        </div>
 
         <script type="text/javascript">
             app.initialize();
-            game();
+            show("start");
         </script>
     </body>
 </html>
