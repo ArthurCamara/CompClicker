@@ -172,10 +172,9 @@ function setQuestion(type){
 }
 
 function menu(op,type){
+	show(op);
 	if(op=="question")setQuestion(type);
 	else if(op=="game")Clicker.init(type);
-
-	show(op);
 }
 
 function format2(n){
@@ -210,6 +209,7 @@ Clicker.init=function(mission){
 	Clicker.increment=1;
 	Clicker.CMMI=0;
 	Clicker.lastClick=0;
+	Clicker.curr_buy="";
 	Clicker.timer=document.getElementById("timer");
 	Clicker.timert=get_ms(M.min,M.sec);
 	Clicker.timer.innerHTML= get_clock(Clicker.timert);
