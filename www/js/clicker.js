@@ -1,62 +1,87 @@
-var Estagiario={}
-Estagiario.increment=1;
-Estagiario.cost=10;
+//===============================================================================
+//--------- Definições de missões
+//===============================================================================
+function Mission(name,info,goal,min,sec){
+	this.name=name;
+	this.info=info;
+	this.goal=goal;
+	this.min=min;
+	this.sec=sec;
+}
 
-var Programador={}
-Programador.increment=2;
-Programador.cost=20;
+MISSION=[
+			 new Mission("Tester","Software de Teste",50,0,20),
+			 new Mission("Missão 1","Software de Padaria",5000,0,30),
+			 new Mission("Missão 2","Software de Supermercado",10000,0,50)
+		];
 
-var Analista={}
-Analista.increment=3;
-Analista.cost=30;
+function createButton(context,classe,func,innerHTML){
+    var button = document.createElement("button");
+    button.type = "button";
+    button.setAttribute('onclick',func);
+    button.className = classe;
+    button.innerHTML=innerHTML;
+    context.appendChild(button);
+}
 
-var CMMI2={}
-CMMI2.increment=10;
-CMMI2.cost=200;
 
-var CMMI3={}
-CMMI3.increment=20;
-CMMI3.cost=300;
+function createMissions(){
+	var list = document.getElementById("missao").getElementsByTagName('li')[0];
+	for (var i = 0; i < MISSION.length; i++) {
+        m = MISSION[i];
+        var innerHTML=
+   		"<span style='text-decoration: underline; font-weight: bold;'>"+m.name+":</span><br>"+
+        "<small><span style='text-decoration: underline;'>"+m.info+"</span><br>"+
+        "<span style='text-decoration: underline;'>Orçamento Requerido:</span>$"+m.goal+"<br>"+
+        "<span style='text-decoration: underline;'>Tempo:</span>"+get_clock(get_ms(m.min,m.sec))+" minutos</small><br>";
 
-var CMMI4={}
-CMMI4.increment=30;
-CMMI4.cost=400;
+        createButton(list,"b_list","menu('game','"+i+"')",innerHTML);
 
-var CMMI5={}
-CMMI5.increment=40;
-CMMI5.cost=500;
-
-function comprar(x){
-	
-
-	if(x=="estagiario") v=Estagiario;
-	else if(x=="programador") v=Programador;
-	else if(x=="analista") v=Analista;
-	else if(x=="cmmi2") v=CMMI2;
-	else if(x=="cmmi3") v=CMMI3;
-	else if(x=="cmmi4") v=CMMI4;
-	else if(x=="cmmi5") v=CMMI5;
-
-	Clicker.curr_buy=v;
-
-	if((Clicker.money-v.cost)<0)alert("Não tem dinheiro suficiente");
-	else {
-		Clicker.money-=v.cost;
-		menu("question",x);
 	}
 }
 
-function ganhar(){
-	v=Clicker.curr_buy;
-	Clicker.automoney+=v.increment;
+//===============================================================================
+//===============================================================================
+//--------- Definições de upgrades
+//===============================================================================
+function Upgrade(increment,automoney,cost,questions){
+	this.increment=increment;
+	this.automoney=automoney;
+	this.cost=cost;
+	this.questions=questions;
 }
+
+var Estagiario= new Upgrade(1,0,10,["fundamentos","estagiario"]);
+
+var Programador= new Upgrade(2,0,20,["fundamentos","programador"]);
+
+var Analista= new Upgrade(2,0,20,["analista"]);
+
+var CMMI2= new Upgrade(10,0,200,["cmmi2"]);
+
+var CMMI3= new Upgrade(20,0,300,["cmmi3"]);
+
+var CMMI4= new Upgrade(30,0,400,["cmmi4"]);
+
+var CMMI5= new Upgrade(40,0,500,["cmmi5"]);
+
+function txt2upgrade(txt){
+	switch(txt) {
+    case "estagiario": return Estagiario;
+    case "programador": return Programador;
+    case "analista": return Analista;
+    case "cmmi2": return CMMI2;
+    case "cmmi3": return CMMI3;
+    case "cmmi4": return CMMI4;
+    case "cmmi5": return CMMI5;
+    default:return Estagiario;
+	}	 
+}
+
 
 //===============================================================================
 
-function game(){
-	show("start");
-}
-
+//Mostra uma tela
 function show(id) {
 	document.getElementById("missao").style.display = 'none';
 	document.getElementById("start").style.display = 'none';
@@ -67,6 +92,28 @@ function show(id) {
     if(id=="voltar")id="game";
     document.getElementById(id).style.display = 'block';
 }
+
+//Compra um upgrade
+function comprar(x){	
+
+	Clicker.curr_buy=txt2upgrade(x);
+
+	if((Clicker.money-Clicker.curr_buy.cost)<0)alert("Não tem dinheiro suficiente");
+	else {
+		Clicker.money-=Clicker.curr_buy.cost;
+		q=Clicker.curr_buy.questions;
+		i=Math.floor((Math.random() * q.length)); 
+		menu("question",q[i]);
+	}
+}
+
+//Ganha o upgrade após pergunta certa
+function ganhar(){
+	Clicker.automoney+=Clicker.curr_buy.automoney;
+	Clicker.increment+=Clicker.curr_buy.increment;
+}
+
+
 
 
 function loadXMLDoc(filename){
@@ -83,23 +130,17 @@ return xhttp.responseXML;
 
 function clearop(){
 	var x;
-	x1=document.getElementById("alt1");
-	x2=document.getElementById("alt2");
-	x3=document.getElementById("alt3");
-	x4=document.getElementById("alt4");
-
-	x1.style.background="transparent";
-	x2.style.background="transparent";
-	x3.style.background="transparent";
-	x4.style.background="transparent";
+	for (var i = 0; i < 4; i++) {
+    		x = Clicker.ALT[i];
+    		x.style.background="transparent";
+    		x.style.display = 'none';
+  		}
 }
 
 function check(op){
 	var x;
-	if(op==0) {x=document.getElementById("alt1");}
-	else if(op==1) {x=document.getElementById("alt2");}
-	else if(op==2) {x=document.getElementById("alt3");}
-	else {x=document.getElementById("alt4");}
+
+	x=Clicker.ALT[op];
 
 	q=Clicker.curr_question;
 	alt= q.getElementsByTagName("alt");
@@ -122,16 +163,19 @@ function setQuestion(type){
 	txt=q.getElementsByTagName("txt")[0].childNodes[0].nodeValue;
 	document.getElementById("qtext").innerHTML = txt;
 	alt= q.getElementsByTagName("alt");
-	document.getElementById("alt1").innerHTML =alt[0].childNodes[0].nodeValue;
-	document.getElementById("alt2").innerHTML =alt[1].childNodes[0].nodeValue;
-	document.getElementById("alt3").innerHTML =alt[2].childNodes[0].nodeValue;
-	document.getElementById("alt4").innerHTML =alt[3].childNodes[0].nodeValue;
+
+	for (var i = 0; i < 4; i++) {
+    		a = Clicker.ALT[i];
+    		a.innerHTML=alt[i].childNodes[0].nodeValue;
+    		a.style.display = 'block';
+  		}
 }
 
 function menu(op,type){
-	show(op)
 	if(op=="question")setQuestion(type);
-	else if(op=="game")Clicker.init();
+	else if(op=="game")Clicker.init(type);
+
+	show(op);
 }
 
 function format2(n){
@@ -144,10 +188,15 @@ function get_clock(ms) {
     clock = minutes + ":" + seconds;
     return clock;
 }
+function get_ms(minutes,seconds){
+	return minutes*60000 + seconds*1000;
+}
             
 var Clicker={}
 
-Clicker.init=function(){
+Clicker.init=function(mission){
+	M = MISSION[mission];//Define qual missao é essa.
+	Clicker.active=true;
 	Clicker.wait=0;
 	Clicker.wait_callback=null;
 	//---------------------------------------------------------------
@@ -155,7 +204,6 @@ Clicker.init=function(){
 	Clicker.fpsMeasure=new Date().getTime();
 	Clicker.accumulatedDelay=0;
 	Clicker.fps=30;//Frames por segundo
-	Clicker.QFile=loadXMLDoc("questions.xml");
 	//---------------------------------------------------------------
 	Clicker.money=0;
 	Clicker.automoney=0;
@@ -163,8 +211,14 @@ Clicker.init=function(){
 	Clicker.CMMI=0;
 	Clicker.lastClick=0;
 	Clicker.timer=document.getElementById("timer");
-	Clicker.timert=300000;
+	Clicker.timert=get_ms(M.min,M.sec);
+	Clicker.timer.innerHTML= get_clock(Clicker.timert);
+	Clicker.goal = M.goal;
+	//---------------------------------------------------------------
+	Clicker.QFile=loadXMLDoc("questions.xml");
 	Clicker.curr_question="";
+	Clicker.ALT = [document.getElementById("alt1"),document.getElementById("alt2"),document.getElementById("alt3"),document.getElementById("alt4")];
+	clearop();
 	//---------------------------------------------------------------
 	Clicker.click=function(event){
 			if (event) event.preventDefault();
@@ -210,10 +264,11 @@ Clicker.latency=function(){
 }
 
 Clicker.loop=function()	{
-		Clicker.update();
-		Clicker.latency();		
-		Clicker.draw();		
-		setTimeout(Clicker.loop,1000/Clicker.fps);
+			Clicker.update();
+			if(Clicker.active==false)return;
+			Clicker.latency();		
+			Clicker.draw();		
+			setTimeout(Clicker.loop,1000/Clicker.fps);
 	}
 
 Clicker.update=function(){
@@ -232,6 +287,12 @@ Clicker.update=function(){
 	}
 	if(Clicker.timer.innerHTML!=get_clock(0)){
 		Clicker.timert-=1000/Clicker.fps;		
+	}
+	else{
+		alert("Tempo acabou");
+		Clicker.active=false;
+		menu("missao");
+		return;
 	}
 	Clicker.earn(Clicker.automoney/Clicker.fps);
 }

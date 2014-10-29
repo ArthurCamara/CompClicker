@@ -4,6 +4,62 @@
 		"selected_items":
 		[
 			[
+				"crea",
+				"createaux"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"but",
+				"button_txt"
+			],
+			[
+				"txt",
+				"txt2upgrade"
+			],
+			[
+				"Miss",
+				"Mission"
+			],
+			[
+				"get_",
+				"get_ms"
+			],
+			[
+				"sec",
+				"seconds"
+			],
+			[
+				"CMM",
+				"CMMI3"
+			],
+			[
+				"pro",
+				"programador"
+			],
+			[
+				"CM",
+				"CMMI2"
+			],
+			[
+				"questio",
+				"questions"
+			],
+			[
+				"qe",
+				"questions"
+			],
+			[
+				"CMMI",
+				"CMMI5"
+			],
+			[
 				"range",
 				"ranges"
 			],
@@ -152,14 +208,6 @@
 				"jogadas_validas"
 			],
 			[
-				"CMM",
-				"CMMI4"
-			],
-			[
-				"get",
-				"getElementsByTagName"
-			],
-			[
 				"wai",
 				"wait_callback"
 			],
@@ -170,10 +218,6 @@
 			[
 				"tab",
 				"tabuleiro"
-			],
-			[
-				"pro",
-				"profundidade"
 			],
 			[
 				"write",
@@ -261,10 +305,34 @@
 			}
 		},
 		{
-			"file": "/home/skatiruas/Downloads/partition.cpp",
+			"file": "www/questions.xml",
 			"settings":
 			{
-				"buffer_size": 3582,
+				"buffer_size": 7179,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "www/index.html",
+			"settings":
+			{
+				"buffer_size": 8148,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "www/js/clicker.js",
+			"settings":
+			{
+				"buffer_size": 8429,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "www/css/index.css",
+			"settings":
+			{
+				"buffer_size": 6328,
 				"line_ending": "Unix"
 			}
 		}
@@ -293,6 +361,11 @@
 	},
 	"file_history":
 	[
+		"/home/skatiruas/Atual/Engenharia de Software/SoftClicker/www/js/clicker.js",
+		"/home/skatiruas/Atual/Engenharia de Software/SoftClicker/www/js/alert.js",
+		"/home/skatiruas/UFMG-Ciencia_da_Computacao/2014-2/Engenharia de Software/git",
+		"/home/skatiruas/Downloads/partition.cpp",
+		"/home/skatiruas/.bash_history",
 		"/home/skatiruas/.cache/.fr-OUwOjt/othello.py",
 		"/home/skatiruas/Downloads/arrow.scm",
 		"/home/skatiruas/.cache/.fr-zxKrb4/README.txt",
@@ -353,7 +426,6 @@
 		"/home/skatiruas/UFMG-Ciencia_da_Computacao/2014-2/Robótica Móvel/TP1/tp1/scripts/globals.py",
 		"/home/skatiruas/UFMG-Ciencia_da_Computacao/2014-2/Inteligência Artificial/TP1/help/minimax.py",
 		"/home/skatiruas/Atual/Engenharia de Software/SoftClicker/www/questions.xml",
-		"/home/skatiruas/Atual/Engenharia de Software/SoftClicker/www/js/clicker.js",
 		"/home/skatiruas/Atual/Engenharia de Software/SoftClicker/www/css/index.css",
 		"/home/skatiruas/Atual/Engenharia de Software/SoftClicker/www/index.html",
 		"/home/skatiruas/Atual/Engenharia de Software/SoftClicker/www/js/index.js",
@@ -414,13 +486,9 @@
 		"/home/skatiruas/UFMG-Ciencia_da_Computacao/2014-2/Engenharia de Software/ZombiePhonegap/Zombie/www/css/index.css",
 		"/home/skatiruas/UFMG-Ciencia_da_Computacao/2014-2/Engenharia de Software/SoftClicker/www/js/index.js",
 		"/home/skatiruas/UFMG-Ciencia_da_Computacao/2014-2/Engenharia de Software/cookie-clicker-master/style.css",
-		"/home/skatiruas/.bash_history",
 		"/home/skatiruas/UFMG-Ciencia_da_Computacao/2014-2/Engenharia de Software/Exemplos de questoes de prova.pdf",
 		"/home/skatiruas/Documentos/policialagoasanta",
-		"/home/skatiruas/Documentos/teste.js",
-		"/usr/share/applications/defaults.list",
-		"/usr/share/applications/sublime.desktop",
-		"/home/skatiruas/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings"
+		"/home/skatiruas/Documentos/teste.js"
 	],
 	"find":
 	{
@@ -438,6 +506,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"byid",
+			"for",
+			"phonegap",
+			"git",
 			"tp1",
 			"self.grid",
 			"y0",
@@ -539,13 +611,13 @@
 		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
-		"whole_word": true,
+		"whole_word": false,
 		"wrap": true
 	},
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -576,28 +648,109 @@
 				},
 				{
 					"buffer": 1,
-					"file": "/home/skatiruas/Downloads/partition.cpp",
+					"file": "www/questions.xml",
 					"settings":
 					{
-						"buffer_size": 3582,
+						"buffer_size": 7179,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								5499,
+								5499
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++/C++.tmLanguage",
-							"tab_size": 2,
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2002.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "www/index.html",
+					"settings":
+					{
+						"buffer_size": 8148,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8093,
+								8093
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1170.0,
+						"translation.y": 1053.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "www/js/clicker.js",
+					"settings":
+					{
+						"buffer_size": 8429,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								515,
+								515
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "www/css/index.css",
+					"settings":
+					{
+						"buffer_size": 6328,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2809,
+								2809
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 819.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -661,6 +814,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 124.0,
+	"side_bar_width": 50.0,
 	"status_bar_visible": true
 }

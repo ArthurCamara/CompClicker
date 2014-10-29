@@ -90,14 +90,7 @@
         <div id="missao">
             <h1 id="functext">Escolha a missão:</h1>
             <div class="upbox">
-                 <ul style="list-style-type:none">
-                    <li><button type="button" class="b_list" onclick="menu('game')">
-                        <span style="text-decoration: underline; font-weight: bold;">Missão 1:</span><br>
-                        <small><span style="text-decoration: underline;">Software de Padaria</span><br>
-                        <span style="text-decoration: underline;">Orçamento Requerido:</span>$5000<br>
-                        <span style="text-decoration: underline;">Tempo:</span>5:00 minutos</small><br>
-                    </button></li>
-                </ul> 
+                 <ul style="list-style-type:none"><li></li></ul> 
             </div>
         </div>
 
@@ -135,17 +128,18 @@
             <h1 id="qtext"></h1>
             <div class="upbox">
                  <ul style="list-style-type:none">
-                    <li><button id="alt1" type="button" class="b_quest" onclick="check('0')"></button></li>
-                    <li><button id="alt2" type="button" class="b_quest" onclick="check('1')"></button></li>
-                    <li><button id="alt3" type="button" class="b_quest" onclick="check('2')"></button></li>
-                    <li><button id="alt4" type="button" class="b_quest" onclick="check('3')"></button></li>
+                    <li><button id="alt1" type="button" class="b_list" onclick="check('0')"></button></li>
+                    <li><button id="alt2" type="button" class="b_list" onclick="check('1')"></button></li>
+                    <li><button id="alt3" type="button" class="b_list" onclick="check('2')"></button></li>
+                    <li><button id="alt4" type="button" class="b_list" onclick="check('3')"></button></li>
                 </ul> 
             </div>
         </div>
 
         <script type="text/javascript">
             app.initialize();
-            show("start");
+            menu("start");
+            createMissions();
         </script>
     </body>
 </html>

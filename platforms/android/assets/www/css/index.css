@@ -83,18 +83,6 @@ body {
     margin-right: 50px;           
 }
 
-.b_quest {
-    background:transparent center;
-    overflow:visible;
-    position:relative;       
-    left:0px;
-    top:20px;
-    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    font-size:25px;
-    margin-bottom: 50px;         
-}
-
-
 .b_func {
     background:transparent center;
     overflow:visible;
