@@ -29,14 +29,14 @@
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>SoftClicker</title>
     </head>
-    <body>
+    <body style="overflow : hidden">
 
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/clicker.js"></script>
 
         <div id="start" class="start_screen">
-            <h2>SoftClicker</h2>
+            <h2>SOFTCLICKER</h2>
             <h1>SnowWhite</h1>
             <button id="teste" type="button" class="b_func" onclick="menu('missao')">START</button> 
         </div>
@@ -46,82 +46,28 @@
     	    <div id="counter" class="counter">0</div>
             <div id="timer" class="timer">5000</div>
             <div id="tela" class="clicker" ontouchstart="Clicker.click()"></div>
-            <button type="button" class="b_func" onclick="menu('funcionarios')">Funcionários</button> 
-            <button type="button" class="b_cert" onclick="menu('certificados')">Certificados</button> 
-        </div>
-
-        <div id="certificados">
-            <h1>Certificados</h1>
-            <div class="upbox">
-                 <ul style="list-style-type:none">
-                    <li><button type="button" class="b_list" onclick="comprar('cmmi2')">
-                        <span style="text-decoration: underline; font-weight: bold;">CMMI 2</span><br>
-                        <small><span style="text-decoration: underline;">Custo:</span>200<br>
-                        <span style="text-decoration: underline;">Dependencias:</span>Nenhuma<br>
-                        <span style="text-decoration: underline;">Características:</span>Aumenta
-                        o rendimento em 10$/segundo</small><br>
-                    </button></li>
-                    <li><button type="button" class="b_list" onclick="comprar('cmmi3')">
-                        <span style="text-decoration: underline; font-weight: bold;">CMMI 3</span><br>
-                        <small><span style="text-decoration: underline;">Custo:</span>300<br>
-                        <span style="text-decoration: underline;">Dependencias:</span>CMMI 2<br>
-                        <span style="text-decoration: underline;">Características:</span>Aumenta
-                        o rendimento em 20$/segundo</small><br>
-                    </button></li>
-                    <li><button type="button" class="b_list" onclick="comprar('cmmi4')">
-                        <span style="text-decoration: underline; font-weight: bold;">CMMI 4</span><br>
-                        <small><span style="text-decoration: underline;">Custo:</span>400<br>
-                        <span style="text-decoration: underline;">Dependencias:</span>CMMI 3<br>
-                        <span style="text-decoration: underline;">Características:</span>Aumenta
-                        o rendimento em 30$/segundo</small><br>
-                    </button></li>
-                    <li><button type="button" class="b_list" onclick="comprar('cmmi5')">
-                        <span style="text-decoration: underline; font-weight: bold;">CMMI 5</span><br>
-                        <small><span style="text-decoration: underline;">Custo:</span>500<br>
-                        <span style="text-decoration: underline;">Dependencias:</span>CMMI 4<br>
-                        <span style="text-decoration: underline;">Características:</span>Aumenta
-                        o rendimento em 40$/segundo</small><br>
-                    </button></li>
-                </ul> 
-            </div>
-            <button type="button" class="b_voltar" onclick="menu('voltar')">Voltar</button> 
+            <button type="button" class="b_func" onclick="menu('upgrades')">Upgrades</button> 
         </div>
 
         <div id="missao">
-            <h1 id="functext">Escolha a missão:</h1>
+            <h1 id="missiontext">Escolha a missão:</h1>
             <div class="upbox">
                  <ul style="list-style-type:none"><li></li></ul> 
             </div>
         </div>
 
-        <div id="funcionarios">
-            <h1 id="functext">Funcionários</h1>
+        <div id="upgrades">
+            <h1 id="functext">Upgrades</h1>
             <div class="upbox">
-                 <ul style="list-style-type:none">
-                    <li><button type="button" class="b_list" onclick="comprar('estagiario')">
-                        <span style="text-decoration: underline; font-weight: bold;">Estagiário</span><br>
-                        <small><span style="text-decoration: underline;">Custo:</span>10<br>
-                        <span style="text-decoration: underline;">Dependencias:</span>Nenhuma<br>
-                        <span style="text-decoration: underline;">Características:</span>Aumenta
-                        o rendimento em 1$/segundo</small><br>
-                    </button></li>
-                    <li><button type="button" class="b_list" onclick="comprar('programador')">
-                        <span style="text-decoration: underline; font-weight: bold;">Programador</span><br>
-                        <small><span style="text-decoration: underline;">Custo:</span>20<br>
-                        <span style="text-decoration: underline;">Dependencias:</span>Nenhuma<br>
-                        <span style="text-decoration: underline;">Características:</span>Aumenta
-                        o rendimento em 2$/segundo</small><br>
-                    </button> </li>
-                    <li><button type="button" class="b_list" onclick="comprar('analista')">
-                        <span style="text-decoration: underline; font-weight: bold;">Analista</span><br>
-                        <small><span style="text-decoration: underline;">Custo:</span>30<br>
-                        <span style="text-decoration: underline;">Dependencias:</span>Nenhuma<br>
-                        <span style="text-decoration: underline;">Características:</span>Aumenta
-                        o rendimento em 3$/segundo</small><br>
-                    </button></li>
-                </ul> 
+                 <ul style="list-style-type:none"><li></li></ul> 
             </div>
             <button type="button" class="b_voltar" onclick="menu('voltar')">Voltar</button> 
+        </div>
+
+        <div id="minfo">
+            <h1>Informações da missão:</h1>
+            <div id="minfobox" class="upbox"></div>
+            <button type="button" class="b_voltar" onclick="menu('game')">OK</button> 
         </div>
 
         <div id="question">
@@ -139,7 +85,6 @@
         <script type="text/javascript">
             app.initialize();
             menu("start");
-            createMissions();
         </script>
     </body>
 </html>

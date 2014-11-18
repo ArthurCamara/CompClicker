@@ -34,6 +34,7 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
+        //document.addEventListener('touchmove', function(e) { e.preventDefault(); }, false);
         setupScale(480);
         app.receivedEvent('deviceready');
     },

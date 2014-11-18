@@ -20,7 +20,7 @@ public class WebviewSetting extends CordovaPlugin {
     public void initialize(final CordovaInterface cordova, CordovaWebView webView) {
         Log.d(LOG_TAG, "set viewport");
         this.webView = webView;
-        super.initialize(cordova, webView); 
+        super.initialize(cordova, webView);
         
     }
     @Override

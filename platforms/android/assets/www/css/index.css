@@ -42,12 +42,17 @@ body {
     height:100%;
     margin:0px;
     padding:0px;
-    text-transform:uppercase;
+    text-transform:none;
     width:100%;
 }
 
 .upbox {
  border:2px solid #ccc; width:480px; height: 600px; overflow-y: scroll; 
+}
+
+.myfont {
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:20px;
 }
 
 .button_up {
@@ -153,6 +158,7 @@ body {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
+
 
 h1 {
     font-size:24px;

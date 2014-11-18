@@ -7,7 +7,7 @@
 		3.1-O parâmetro is diz se a questão é True ou False
 
 		<question>
-				<txt>Texto da questão</txt>
+					<txt>Texto da questão</txt>
 				<alt is="F">Alternativa1</alt>
 				<alt is="F">Alternativa2</alt>
 				<alt is="F">Alternativa3</alt>
@@ -15,199 +15,384 @@
 		</question>
 -->
 <SoftClicker>
-<!--=====================================================================-->
-	<fundamentos>
 
-		<question>
-				<txt>Qual das questões abaixo não é mais uma das grandes preocupações de um engenheiro de software?</txt>
-				<alt is="T">Por que hardware é tão caro?</alt>
-				<alt is="F">Por que quase sempre não se consegue remover todos os erros do software antes da sua entrega?</alt>
-				<alt is="F">Por que normalmente se gasta tanto tempo para desenvolver software?</alt>
-				<alt is="F">Por que, via de regra, software custa tão caro?</alt>
-		</question>
-
-		<question>
-				<txt>Softwares deterioram-se em vez de desgastar-se porque:</txt>
-				<alt is="F">Ele sofre quando exposto a ambientes hostis.</alt>
-				<alt is="F">Defeitos são mais prováveis de surgir quando o software é usado várias vezes.</alt>
-				<alt is="F">Componentes de reposição de software são difíceis de se encontrar no mercado.</alt>
-				<alt is="T">Mudanças frequentes aumentam a probabilidade de se introduzir erros no software.</alt>
-		</question>
-
-		<question>
-				<txt>Atividades de “guarda-chuva” de engenharia de software são aplicadas somente durante as fases iniciais do desenvolvimento de software;</txt>
-				<alt is="T">Falso.</alt>
-				<alt is="F">Verdadeiro</alt>
-		</question>
-
-		<question>
-				<txt>Qual dos fatores a seguir não se relaciona à “crise do software”?</txt>
-				<alt is="T">Essa crise teve como origem a introdução de computadores pessoais na década de 1970.</alt>
-				<alt is="F">O ponto fundamental foi o fato de que os softwares eram entregues fora do prazo, com custos mais elevados do que os projetados inicialmente e com uma qualidade aquém do esperado.</alt>
-				<alt is="F">A complexidade dos problemas, a ausência de técnicas bem estabelecidas e a crescente demanda por novas aplicações começavam a se tornar um grave problema.</alt>
-				<alt is="F">Foi um termo criado para descrever as dificuldades enfrentadas no desenvolvimento de software no final da década de 1960.</alt>
-		</question>
-
-		<question>
-				<txt>A grande aplicação da Engenharia de Software pode ser simplificada em compreender o problema, planejar a solução, executar o plano e examinar o resultado.</txt>
-				<alt is="F">Verdadeiro</alt>
-				<alt is="T">Falso.</alt>
-		</question>
-
-		<question>
-				<txt>Qual dos itens listados abaixo não se aplica como camada da engenharia de software?</txt>
-				<alt is="T">Manufatura.</alt>
-				<alt is="F">Ferramentas.</alt>
-				<alt is="F">Processos.</alt>
-				<alt is="F">Métodos.</alt>
-		</question>
-		
-		<question>
-				<txt>Qual desses não é um fator de produção que determina o grau de sucesso de um software?</txt>
-				<alt is="F">Pessoas.</alt>
-				<alt is="F">Tecnologia.</alt>
-				<alt is="T">Custo.</alt>
-				<alt is="F">Processos.</alt>
-		</question>
-
-	</fundamentos>
-<!--=====================================================================-->
-	<cmmi>
-
-		<question>
-				<txt>Qual dessas áreas não se relaciona ao nível 2 do CMMI?</txt>
-				<alt is="F">Medição e Análise.</alt>
-				<alt is="F">Planejamento de Projetos.</alt>
-				<alt is="T">Integração de Produto.</alt>
-				<alt is="F">Gestão de requisitos</alt>
-		</question>
-
-	</cmmi>
-<!--=====================================================================-->
-	<requisitos>
-		<question>
-				<txt>O que é prototipagem?</txt>
-				<alt is="F">É um requisito onde o engenheiro de software não tem acesso.</alt>
-				<alt is="T">É um meio de validar a interpretação que o engenheiro de software faz do requisito.</alt>
-				<alt is="F">É a versão final do sistema disponível apenas no fim do processo de  desenvolvimento.</alt>
-				<alt is="F">w</alt>
-		</question>
-
-	</requisitos>
-<!--=====================================================================-->
-	<teste>
-
-	</teste>
-<!--=====================================================================-->
-	<ciclodevida>
-
-
-	</ciclodevida>
-<!--=====================================================================-->
-	<arquitetura>
-
-		
-	</arquitetura>
-<!--=====================================================================-->
-	<design>
-
-		
-	</design>
-<!--=====================================================================-->
-	<metodologia>
-
-		
-	</metodologia>
-<!--=====================================================================-->
-	<qualidadesw>
-
-		
-	</qualidadesw>
-<!--=====================================================================-->
-	<desenvolvimentosw>
-
-		
-	</desenvolvimentosw>
-<!--=====================================================================-->
-	<manutencao>
-
-		
-	</manutencao>
-<!--=====================================================================-->
-	<gestao>
-
-		
-	</gestao>
-<!--=====================================================================-->
-
-	<estagiario>
-		<question>
-				<txt>Esta questão deverá ser sobre:</txt>
-				<alt is="F">Programador</alt>
-				<alt is="F">Analista</alt>
-				<alt is="T">Estagiário</alt>
-		</question>
-	</estagiario>
-<!--=====================================================================-->
-	<analista>
-		<question>
-				<txt>Esta questão deverá ser sobre:</txt>
-				<alt is="F">Outros</alt>
-				<alt is="F">Programador</alt>
-				<alt is="T">Analista</alt>
-				<alt is="F">Estagiário</alt>
-		</question>
-	</analista>
-<!--=====================================================================-->
-	<programador>
-		<question>
-				<txt>Esta questão deverá ser sobre:</txt>
-				<alt is="F">Outros</alt>
-				<alt is="T">Programador</alt>
-				<alt is="F">Analista</alt>
-				<alt is="F">Estagiário</alt>
-		</question>
-	</programador>
-<!--=====================================================================-->
-	<cmmi2>
-		<question>
-				<txt>Esta questão deverá ser sobre:</txt>
-				<alt is="T">CMMI2</alt>
-				<alt is="F">CMMI3</alt>
-				<alt is="F">CMMI4</alt>
-				<alt is="F">CMMI5</alt>
-		</question>
-	</cmmi2>
 <!--=====================================================================-->	
-	<cmmi3>
+	<fundamentos>
 		<question>
-				<txt>Esta questão deverá ser sobre:</txt>
-				<alt is="F">CMMI2</alt>
-				<alt is="T">CMMI3</alt>
-				<alt is="F">CMMI4</alt>
-				<alt is="F">CMMI5</alt>
+				<txt> Qual das questões abaixo não é mais uma das grandes preocupações de um engenheiro de software?</txt>
+				<alt is="T">a. Por que hardware é tão caro?</alt>
+				<alt is="F">b. Por que quase sempre não se consegue remover todos os erros do software antes da sua entrega?</alt>
+				<alt is="F">c. Por que normalmente se gasta tanto tempo para desenvolver software?</alt>
+				<alt is="F">d. Por que, via de regra, software custa tão caro?</alt>
 		</question>
-	</cmmi3>
-<!--=====================================================================-->
-	<cmmi4>
-		<question>
-				<txt>Esta questão deverá ser sobre:</txt>
-				<alt is="F">CMMI2</alt>
-				<alt is="F">CMMI3</alt>
-				<alt is="T">CMMI4</alt>
-				<alt is="F">CMMI5</alt>
+				
+		<question> 
+				<txt> Softwares deterioram-se em vez de desgastar-se porque:</txt>
+				<alt is="F">a. Sofre quando exposto a ambientes hostis.</alt>
+				<alt is="F">b. Defeitos são mais prováveis de surgir quando o software é usado várias vezes.</alt>
+				<alt is="F">c. Componentes de reposição de software são difíceis de se encontrar no mercado. </alt>
+				<alt is="T">d. Mudanças frequentes aumentam a probabilidade de se introduzir erros no software.</alt>
 		</question>
-	</cmmi4>
-<!--=====================================================================-->
-	<cmmi5>
-		<question>
-				<txt>Esta questão deverá ser sobre:</txt>
-				<alt is="F">CMMI2</alt>
-				<alt is="F">CMMI3</alt>
-				<alt is="F">CMMI4</alt>
-				<alt is="T">CMMI5</alt>
+	
+				
+		<question> 
+				<txt>Atividades de “guarda-chuva” de engenharia de software são aplicadas somente durante as fases iniciais do desenvolvimento de software.</txt>
+				<alt is="T">a. Falso.</alt>
+				<alt is="F">b. Verdadeiro.</alt>
 		</question>
-	</cmmi5>
-<!--=====================================================================-->
+				
+		<question> 
+				<txt> Qual dos fatores a seguir não se relaciona à “crise do software”?</txt>
+				<alt is="T"> a. Essa crise teve como origem a introdução de computadores pessoais na década de 1970.</alt>
+				<alt is="F">b. O ponto fundamental foi o fato de que os softwares eram entregues fora do prazo, com custos mais elevados do que os projetados inicialmente e com uma qualidade aquém do esperado.</alt>
+				<alt is="F">c. A complexidade dos problemas, a ausência de técnicas bem estabelecidas e a crescente demanda por novas aplicações começavam a se tornar um grave problema.</alt>
+				<alt is="F">d. Foi um termo criado para descrever as dificuldades enfrentadas no desenvolvimento de software no final da década de 1960.</alt>
+		</question>
+				
+		<question> 
+				<txt> A grande aplicação da Engenharia de Software pode ser simplificada em compreender o problema, planejar a solução, executar o plano e examinar o resultado.</txt>
+				<alt is="F">a. Verdadeiro.</alt>
+				<alt is="T">b.  Falso.</alt>
+		</question>
+				
+		<question> 
+				<txt> Qual dos itens listados abaixo não se aplica como camada da engenharia de software?</txt>
+				<alt is="T">a.  Manufatura.</alt>
+				<alt is="F">b. Ferramentas.</alt>
+				<alt is="F">c. Processos.</alt>
+				<alt is="F">d. Métodos.</alt>
+		</question>
+				
+		<question> 
+				<txt> Qual desses não é um fator de produção que determina o grau de sucesso de um software?</txt>
+				<alt is="F">a. Pessoas.</alt>
+				<alt is="F">b. Tecnologia.</alt>
+				<alt is="T">c.  Custo.</alt>
+				<alt is="F">d. Processos.</alt>
+		</question>
+				
+		<question> 
+				<txt> Qual das opções não é uma característica de qualidade de software que deve ser avaliada?</txt>
+				<alt is="F">a. Usabilidade.</alt>
+				<alt is="F">b. Confiabilidade.</alt>
+				<alt is="T">c.  Limitação.</alt>
+				<alt is="F">d. Manutenibilidade.</alt>
+		</question>
+				
+		<question> 
+				<txt> Qual das definições a seguir não está correta?</txt>
+				<alt is="T">a. Usabilidade: adequação do software às necessidades de uso.</alt>
+				<alt is="F">b. Confiabilidade: freqüência de falhas, recuperabilidade do software.</alt>
+				<alt is="F">c. Eficiência: característica relacionada ao desempenho do software.</alt>
+				<alt is="F">d. Manutenibilidade: esforço necessário para modificar o software.</alt>
+		</question>
+				
+		<question> 
+				<txt> Qual dessas áreas não se relaciona ao nível 2 do CMMI?</txt>
+				<alt is="F">a. Medição e Análise.</alt>
+				<alt is="F">b. Planejamento de Projetos.</alt>
+				<alt is="T">c.  Integração de Produto.</alt>
+				<alt is="F">d. Gestão de requisitos.</alt>
+		</question>
+				
+		<question> 
+				<txt> Qual dessas áreas não se relaciona ao nível 3 do CMMI?</txt>
+				<alt is="T">a. Gerenciamento Quantitativo de Projeto</alt>
+				<alt is="F">b. Validação</alt>
+				<alt is="F">c. Desenvolvimento de Requisitos.</alt>
+				<alt is="F">d. Gerenciamento de Riscos.</alt>
+		</question>
+				
+		<question> 
+				<txt> Qual dessas áreas relaciona-se apenas ao nível 5 do CMMI?</txt>
+				<alt is="T">a.  Gestão de Processo Organizacional.</alt>
+				<alt is="F">b. Verificação.</alt>
+				<alt is="F">c. Desempenho de Processo Organizacional.</alt>
+				<alt is="F">d. Gerência de Configuração.</alt>
+		</question>
+				 
+		<question> 
+				<txt> Como são os processos no nível 3 do CMMI?</txt>
+				<alt is="F">a. Executados, mas não institucionalizados. São satisfeitas as metas específicas, mas não as genéricas.</alt>
+				<alt is="F">b. Geridos. O processo é executado, a infra-estrutura disponível o mantém mesmo em situações adversas.</alt>
+				<alt is="T">c.  Definidos. O processo é gerido, derivado de processos padrão da organização, consistente entre projetos e descrito formalmente. </alt>
+				<alt is="F">d. Otimizantes. O processo é quantitativamente gerido, está em melhoria constantes e há um entendimento das causas comuns de variação.</alt>
+		</question>
+				
+		<question> 
+				<txt> Em que nível do CMMI ocorre a demonstração de que um produto ou componente satisfaz ao uso pretendido, quando colocado no ambiente alvo?</txt>
+				<alt is="F">a. Nível 2.</alt>
+				<alt is="T">b.  Nível 3.</alt>
+				<alt is="F">c. Nível 4.</alt>
+				<alt is="F">d. Nível 5.</alt>
+		</question>
+				
+		<question> 
+				<txt> O desenvolvimento de requisitos aderente ao CMMI é responsável por gerenciar os requisitos dos produtos e componentes de produto dos projetos de software a desenvolver.</txt>
+				<alt is="F">a. Verdadeiro.</alt>
+				<alt is="T">b.  Falso.</alt>
+		</question>
+					
+		<question> 
+				<txt> No nível 2, o processo é gerenciado e adaptado a partir de um conjunto de processos padronizados da organização que, por sua vez, também evoluem continuamente.</txt>
+				<alt is="F">a. Verdadeiro.</alt>
+				<alt is="T">b.  Falso.</alt>
+		</question>
+				
+		<question> 
+				<txt> No nível 4 do CMMI, o processo é definido e controlado por meio de técnicas estatísticas e outros métodos quantitativos, a fim de atingir os objetivos quantificáveis de desempenho de processo e de qualidade.</txt>
+				<alt is="T"> a. Verdadeiro.</alt>
+				<alt is="F">b. Falso. </alt>
+		</question>
+				
+		<question> 
+				<txt> Sobre o CMMI, é correto dizer que:</txt>
+				<alt is="F">a. a avaliação do nível de capacidade de uma área de processo do CMMI usa uma escala que vai de 0 a 5, sendo que um nível de capacidade mais alto exclui os atributos dos níveis mais baixos. </alt>
+				<alt is="F">b. o CMMI possui representação por estágio (formado por 5 categorias de representação, tais como Engenharia e Processos) e contínua (contendo 6 áreas de processo, tais como Gerenciado e Definido).</alt>
+				<alt is="F">c. no nível 1 de maturidade do CMMI, os projetos são monitorados, controlados, revisados e avaliados quanto à sua aderência à descrição do processo que utilizaram, garantido disciplina e estabilidade.</alt>
+				<alt is="T">d.  um dos objetivos do CMMI é identificar problemas potenciais antes que eles ocorram e planejar ações que inibam esses riscos durante o ciclo de vida do projeto.</alt>
+		</question>
+		
+		<question> 
+				<txt> O que é prototipagem?</txt>
+				<alt is="F">a. É um requisito onde o engenheiro de software não tem acesso.</alt>
+				<alt is="T">b.  É um meio de validar a interpretação que o engenheiro de software faz do requisito.</alt>
+				<alt is="F">c. É a versão final do sistema disponível apenas no fim do processo de  desenvolvimento.</alt>
+				<alt is="F">d. É a produção de versão inicial de um sistema com o qual não é possível realizar experimentos com o intuito de avaliar características específicas do sistema.</alt>
+		</question>
+				
+		<question> 
+				<txt> O que são requisitos funcionais?</txt>
+				<alt is="T">a.  São funções que o software deve executar, indicações dos serviços que o sistema deve fornecer, como o sistema deve reagir e como o sistema se deve comportar em situações particulares.</alt>
+				<alt is="F">b. São tarefas que os usuários estão habilitados a realizar.</alt>
+				<alt is="F">c. São indicações das funcionalidades que o sistema deve fornecer, como o sistema deve ser desenhado e como o sistema se deve comportar em situações gerais de funcionamento.</alt>
+				<alt is="F">d. São indicações da arquitetura do sistema, como o sistema deve interagir com os utilizadores e como o sistema se deve comportar em situações particulares.</alt>
+		</question>
+				
+		<question> 
+				<txt> O que são requisitos não funcionais?</txt>
+				<alt is="F">a. São condições ou capacidade necessária para um usuário resolver um problema ou alcançar um objetivo.</alt>
+				<alt is="F">b. São atividades que serão executadas no projeto.</alt>
+				<alt is="F">c. São os requisitos que medem o desempenho das funcionalidades do sistemas.</alt>
+				<alt is="T">d.  São aqueles que agem para restringir uma solução.</alt>
+		</question>
+				
+		<question> 
+				<txt> Qual das opções se enquadra como requisito funcional?</txt>
+				<alt is="T">a.  O software deve emitir relatórios contábeis.</alt>
+				<alt is="F">b. O tempo de resposta do sistema não deve ultrapassar 10 segundos.</alt>
+				<alt is="F">c. O software deve ser operacionalizado no sistema Windows.</alt>
+				<alt is="F">d. O banco de dados usado deverá ser o Oracle.</alt>
+		</question>
+			
+		<question> 
+				<txt> Qual das opções é um requisito não funcional?</txt>
+				<alt is="F">a. O sistema deve possibilitar o cadastramento dos dados pessoais dos clientes.</alt>
+				<alt is="F">b. O sistema deve emitir relatórios gerenciais.</alt>
+				<alt is="T">c.  O sistema deve ser operacionalizado no sistema Windows.</alt>
+				<alt is="F">d. O sistema deve permitir a baixa automática do estoque quando da venda de um produto.</alt>
+		</question>
+				
+		<question> 
+				<txt> Qual é a responsabilidade da Engenharia de Requisitos?</txt>
+				<alt is="T">a. Identificar os serviços que o cliente pretende para um sistema e as diversas restrições do sistema.</alt>
+				<alt is="F">b. Identificar as funcionalidades que o cliente pretende para um sistema, bem como as diversas restrições da organização.</alt>
+				<alt is="F">c. Identificar os serviços que o cliente pretende para um sistema e as diversas restrições da organização e dos StakeHolders. </alt>
+				<alt is="F">d. Todas as respostas.</alt>
+		</question>
+				
+		<question> 
+				<txt> Qual das seguintes afirmativas é verdadeira acerca dos tipos de testes em engenharia de software?</txt>
+				<alt is="F">a. Testes de interface são classificados como de caixa branca.</alt>
+				<alt is="F">b. Testes de adaptabilidade são classificados como de caixa preta.</alt>
+				<alt is="T">c.  Testes de caixa preta, também chamados de teste comportamental, tem foco nos requisitos funcionais do software.</alt>
+				<alt is="F">d. Testes de caixa branca complementam os testes de caixa preta, pois contemplam diferentes classes de erros.</alt>
+		</question>
+				
+		<question> 
+				<txt> Qual das sa. eguintes afirmativas é correta sobre um teste de software?</txt>
+				<alt is="F">a. O teste de software trata da avaliação da qualidade do produto e da identificação de defeitos e problemas. Essa avaliação significa verificar através de uma execução controlada se o comportamento está de acordo com o design desejado do desenvolvedor.</alt>
+				<alt is="F">b. O teste de software é executado para avaliar se os requisitos implementados no software são coniventes aos requisitos desejados pelo cliente e documentados formalmente.</alt>
+				<alt is="T">c.  O teste de software avalia a qualidade do produto e identifica defeitos e problemas. Essa avaliação significa verificar através de uma execução controlada se o comportamento está de acordo com o especificado.</alt>
+				<alt is="F">d. Se existem problemas no software, é melhor e mais rápido o cliente encontrá-lo do que a equipe de testes.</alt>
+		</question>
+				
+		<question> 
+				<txt> (i) No RUP, os riscos inerentes a um projeto de software são identificados mais cedo, em comparação ao ciclo de vida tradicional, porque (ii) artefatos são disponibilizados ao final de cada iteração para que o cliente possa validá-los. Com relação às duas afirmações acima, o que é possível dizer?</txt>
+				<alt is="F">a. A afirmação (i) é falsa e a (ii) é verdadeira.</alt>
+				<alt is="F">b. A afirmação (i) é verdadeira e a (ii) é falsa.</alt>
+				<alt is="F">c. As duas são verdadeiras, mas a afirmação (ii) não justifica a (i).</alt>
+				<alt is="T">d.  As duas são verdadeiras, sendo a afirmação (ii) justificativa da (i).</alt>
+		</question>
+				
+		<question> 
+				<txt> Qual é o objetivo direto da gestão de configuração de software?</txt>
+				<alt is="T">a.  Gerenciar mudanças e seu impacto no desenvolvimento de software.</alt>
+				<alt is="F">b. Gerenciar a carga dos dados de sistemas legados e controlar a consistência desses dados.</alt>
+				<alt is="F">c. Fornecer uma interface de gerenciamento, onde o administrados e os usuários, com o devido privilégio, podem alterar a forma como o sistema se comporta.</alt>
+				<alt is="F">d. Documentar o processo de instação do software, incluindo os pré-requisitos de software e hardware para o correto funcionamento do sistema.</alt>
+		</question>
+				
+		<question> 
+				<txt> Qual fase no desenvolvimento de sistemas deve acontecer primeiro no modelo de ciclo de vida em cascata?</txt>
+				<alt is="F">a. Testes.</alt>
+				<alt is="F">b. Análise e projeto.</alt>
+				<alt is="T">c.  Especificação de requisitos.</alt>
+				<alt is="F">d. Implementação.</alt>
+		</question>
+		
+		
+		<question> 
+				<txt> Observe as seguintes afirmativas sobre o método de desenvolvimento de software XP.\nI - Nesse método, as reuniões ocorrem em pé para que o foco no assunto não seja perdido e sejam rápidas.\nII - A programação é realizada em duplas (programação em par), a fim de melhorar a qualidade do código fonte.
+				III - A documentação produzida no método deve ser detalhada.\nQuais das afirmativas são corretas?</txt>
+				<alt is="F">a. Somente I.</alt>
+				<alt is="F">b. Somente III. </alt>
+				<alt is="T">c.  Somente I e II. </alt>
+				<alt is="F">d. Somente II e III. </alt>
+		</question>
+		
+				
+		<question> 
+				<txt> Qual das opções define a Arquitetura de Software?</txt>
+				<alt is="F">a. Desenho do processo para identificar os subsistemas que compõem um sistema.</alt>
+				<alt is="T">b.  Resultado do processo de design.</alt>
+				<alt is="F">c. Quadro de subsistema de controlo e comunicação.</alt>
+				<alt is="F">d. Todas as anteriores.</alt>
+		</question>
+				
+		<question> 
+				<txt> Quais são as fases do modelo RUP (Rational Unified Process)?</txt>
+				<alt is="F">a. Início, Desenho, Codificação e Testes.</alt>
+				<alt is="F">b. Definição de Requisitos, Codificação e Manutenção.</alt>
+				<alt is="T">c.  Início, Elaboração, Construção e Transição.</alt>
+				<alt is="F">d. Desenho, Elaboração, Construção e Instalação.</alt>
+		</question>
+				
+		<question> 
+				<txt> Quais são as características dos métodos ágeis?</txt>
+				<alt is="F">a. É a entrega tradicional de software.</alt>
+				<alt is="T">b.  São baseados numa abordagem iterativa para o desenvolvimento de software.</alt>
+				<alt is="F">c. Após implementação procura satisfazer as mudanças de requisitos.</alt>
+				<alt is="F">d. Concentra-se no design ao invés do código.</alt>
+		</question>
+				
+		<question> 
+				<txt> Em que se baseiam os valores dos métodos ágeis?</txt>
+				<alt is="F">a. Desenvolvimento por fases, baseados nos modelos em cascata.</alt>
+				<alt is="F">b. Confidencialidade, complexidade e desenvolvimento rápido.</alt>
+				<alt is="T">c.  Comunicação, simplicidade e feedback.</alt>
+				<alt is="F">d. Nenhuma das anteriores.</alt>
+		</question>
+				
+		<question> 
+				<txt> Em que consiste a Programação em par?</txt>
+				<alt is="F">a. Processo de revisão em que o código é verificada apenas por 1 pessoa.</alt>
+				<alt is="F">b. Processo de revisão em que o relatório é verificado por mais de 1 pessoa.</alt>
+				<alt is="F">c. Processo de revisão em que o relatório é verificado apenas por 1 pessoa.</alt>
+				<alt is="T">d.  Processo de revisão em que o código é verificado por mais de 1 pessoa.</alt>
+		</question>
+				
+		
+		<question> 
+				<txt> Avalie as alternativas sobre o RUP e diga a(s) correta(s).\nI - A análise de requisitos corresponde à primeira fase do ciclo de desenvolvimento, antecedendo a fase de análise que é iniciada quando a fase de requisitos termina;\nII - Testes de regressão são fundamentais na fase de transição, já que em cada iteração novas funcionalidades são agregadas ao sistema e erros podem ocorrer em módulos já testados anteriormente.\nIII - O RUP é um processo de desenvolvimento formal, não sendo conveniente para aplicação a sistemas de menor porte, pois os documentos obrigatoriamente gerados torna seu custo proibitivo.</txt>
+				<alt is="F">a. I.</alt>
+				<alt is="T">b. II. </alt>
+				<alt is="F">c. III.</alt>
+				<alt is="F">d. II e III.</alt>
+		</question>
+		
+				
+		<question> 
+				<txt> Em qual fase do RUP ocorre as etapas de projetar, implementar e testar a estrutura do sistema, em busca do exercício da arquitetura de desenvolvimento do sistema e gerando testes de desempenho?</txt>	
+				<alt is="F">a. Construção.</alt>
+				<alt is="T">b. Elaboração.</alt>
+				<alt is="F">c. Análise e projeto.</alt>
+				<alt is="F">d. Implementação.</alt>
+		</question>
+				
+		<question> 
+				<txt> Em relação ao RUP (Rational Unified Process), é correto afirmar que:</txt>
+				<alt is="F">a. RUP é usada para desenvolver software de forma sequencial contínua, sem retroalimentação ou repetições evolutivas, e onde o produto só é verificado e testado no final da última fase.</alt>
+				<alt is="F">b. RUP é uma metodologia complexa, tendo o Unified Process como seu refinamento, concebida para sistemas de alto desempenho que exigem trabalho extremo de definição de requisitos muito bem definidos e isolados de mudanças.</alt>
+				<alt is="F">c. RUP procura dar um enfoque menor à documentação, valorizando mais a comunicação oral e utiliza todos os artefatos da UML 2.0 para usar como componente de entrada e saída.</alt>
+				<alt is="T">d.  RUP possui práticas em engenharia de software e sugestões de uso de ferramentas automatizadas que possibilitam acelerar a implementação do CMMI nível 2 e criar uma base consistente para o CMMI nível 3.</alt>
+		</question>
+				
+		<question> 
+				<txt> Identifique a opção correta quanto ao modelo de ciclo de vida em cascata.</txt>
+				<alt is="T">a. Enfatiza a realização sequencial das atividades do desenvolvimento de um produto de software. </alt>
+				<alt is="F">b. Enfatiza a comunicação estreita com o cliente durante o desenvolvimento do produto de software. </alt>
+				<alt is="F">c. Envolve a ideia principal de criar um protótipo executável e, por meio de transformações sucessivas, chegar ao sistema completamente implementado.</alt>
+				<alt is="F">d. Envolve a análise dos riscos envolvidos no desenvolvimento dos requisitos identificados para produto de software. </alt>
+		</question>
+				
+		<question> 
+				<txt> Quais dos princípios apresentados abaixo relaciona-se à gestão de qualidade?</txt>
+				<alt is="F">a. Foco no cliente, abordagem à tomada de decisão com base em banco de dados.</alt>
+				<alt is="F">b. Abordagem à tomada de decisão com base em fatos, ganhos na relação com os fornecedores.</alt>
+				<alt is="T">c. Abordagem de processos, ganhos na relação com os fornecedores.</alt>
+				<alt is="F">d. Foco no produto, abordagem de processos.</alt>
+		</question>
+				
+		<question> 
+				<txt> Quais as atividades do processo de desenvolvimento de um software?</txt>
+				<alt is="T">a. Especificação, Desenho e Implementação, Validação e Manutenção.</alt>
+				<alt is="F">b. Planeamento, Desenho, Desenvolvimento e Instalação.</alt>
+				<alt is="F">c. Estudo, Desenho, Codificação e Implementação.</alt>
+				<alt is="F">d. Especificação, Desenho e Desenvolvimento.</alt>
+		</question>
+				
+		<question> 
+				<txt> O processo de desenvolvimento de software é:</txt>
+				<alt is="F">a. O processo de estabelecer quais os serviços e as restrições que são exigidas na operação e desenvolvimento do sistema.</alt>
+				<alt is="T">b.  Um conjunto de atividades exigidas para o desenvolvimento de um sistema de software.</alt>
+				<alt is="F">c. A distribuição do sistema no seu ambiente operacional.</alt>
+				<alt is="F">d. Um modelo de processo moderno que deriva do UML.</alt>
+		</question>
+				
+		<question> 
+				<txt> As ferramentas CASE (Computer-Aided Software Engineering) são:</txt>
+				<alt is="F">a. Software de apoio ao desenho de software.</alt>
+				<alt is="T">b. Software que apoia o desenvolvimento de software e os processos de manutenção.</alt>
+				<alt is="F">c. Ferramentas para analisar a viabilização de um sistema de software.</alt>
+				<alt is="F">d. Software de ajuda à instalação de novos Sistemas de Informação em grandes organizações.</alt>
+		</question>
+		
+		<question>		
+				<txt> Como  é definido o processo de iteração no processo de desenvolvimento de software?</txt>
+				<alt is="F">a. É o processo em que cada atividade interage com outras para atingirem o sistema final.</alt>
+				<alt is="T">b. Repetição das atividades dos processos de desenvolvimento de software para responder às mudanças de requisitos.</alt>
+				<alt is="F">c. É o desenvolvimento de software ignorando um ou mais processos para cumprir os requisitos.</alt>
+				<alt is="F">d. É o desenvolvimento de software num só processo.</alt>
+		</question>
+				
+		<question> 
+				<txt> Identifique os três tipos de risco em gestão de projetos de software.</txt>
+				<alt is="F">a. Riscos tecnológicos; Riscos ambientais; Riscos financeiros.</alt>
+				<alt is="T">b.  Riscos organizacionais; Riscos de requisitos; Riscos de pessoal.</alt>
+				<alt is="F">c. Riscos de previsão; Riscos biológicos, Riscos empresariais.</alt>
+				<alt is="F">d. Riscos de requisitos; Riscos de previsão; Riscos ocupacionais.</alt>
+		</question>
+				
+		<question> 
+				<txt> Qual(ais) a(s) estratégia(s) a desenvolver para lidar com o risco, em gestão de projetos de software?</txt>
+				<alt is="F">a. Estratégias de prevenção.</alt>
+				<alt is="F">b. Estratégias de minimização.</alt>
+				<alt is="F">c. Planos de contigência.</alt>
+				<alt is="T">d. Todas as anteriores.</alt>
+		</question>
+				
+		<question> 
+				<txt> O que pode ser feito quando o cliente solicita a entrega final do projeto antes do prazo estipulado?</txt>
+				<alt is="F">a. Nada, pois uma vez definido o cronograma do projeto, este não pode ser mudado.</alt>
+				<alt is="T">b. Nada, pois sem saber se os riscos do projeto vão se concretizar, não é possível alterar o cronograma do projeto.</alt>
+				<alt is="F">c. Fazer reunião com os envolvidos para discutir o aumento de recursos ou a diminuição do escopo do projeto.</alt>
+				<alt is="F">d. Cortar atividades de documentação e verificação de qualidade para diminuir o tempo total de entrega do projeto.</alt>
+		</question>
+		<!---->
 
+	</fundamentos>	
+	
+		
 </SoftClicker>
+

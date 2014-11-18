@@ -1,0 +1,237 @@
+<?xml version="1.0"?>
+<!--
+	Como editar esse arquivo:
+	1-Atenção para a identação.
+	2-Defina tag sobre o tema: <tema> </tema>
+	3-Dentro do tema, crie questões:
+		3.1-O parâmetro is diz se a questão é True ou False
+
+		<question>
+				<txt>Texto da questão</txt>
+				<alt is="F">Alternativa1</alt>
+				<alt is="F">Alternativa2</alt>
+				<alt is="F">Alternativa3</alt>
+				<alt is="T">Alternativa4</alt>
+		</question>
+-->
+<SoftClicker>
+<!--=====================================================================-->
+	<fundamentos>
+
+		<question>
+				<txt>Qual das questões abaixo não é mais uma das grandes preocupações de um engenheiro de software?</txt>
+				<alt is="T">Por que hardware é tão caro?</alt>
+				<alt is="F">Por que quase sempre não se consegue remover todos os erros do software antes da sua entrega?</alt>
+				<alt is="F">Por que normalmente se gasta tanto tempo para desenvolver software?</alt>
+				<alt is="F">Por que, via de regra, software custa tão caro?</alt>
+		</question>
+
+		<question>
+				<txt>Softwares deterioram-se em vez de desgastar-se porque:</txt>
+				<alt is="F">Ele sofre quando exposto a ambientes hostis.</alt>
+				<alt is="F">Defeitos são mais prováveis de surgir quando o software é usado várias vezes.</alt>
+				<alt is="F">Componentes de reposição de software são difíceis de se encontrar no mercado.</alt>
+				<alt is="T">Mudanças frequentes aumentam a probabilidade de se introduzir erros no software.</alt>
+		</question>
+
+		<question>
+				<txt>Atividades de “guarda-chuva” de engenharia de software são aplicadas somente durante as fases iniciais do desenvolvimento de software;</txt>
+				<alt is="T">Falso.</alt>
+				<alt is="F">Verdadeiro</alt>
+		</question>
+
+		<question>
+				<txt>Qual dos fatores a seguir não se relaciona à “crise do software”?</txt>
+				<alt is="T">Essa crise teve como origem a introdução de computadores pessoais na década de 1970.</alt>
+				<alt is="F">O ponto fundamental foi o fato de que os softwares eram entregues fora do prazo, com custos mais elevados do que os projetados inicialmente e com uma qualidade aquém do esperado.</alt>
+				<alt is="F">A complexidade dos problemas, a ausência de técnicas bem estabelecidas e a crescente demanda por novas aplicações começavam a se tornar um grave problema.</alt>
+				<alt is="F">Foi um termo criado para descrever as dificuldades enfrentadas no desenvolvimento de software no final da década de 1960.</alt>
+		</question>
+
+		<question>
+				<txt>A grande aplicação da Engenharia de Software pode ser simplificada em compreender o problema, planejar a solução, executar o plano e examinar o resultado.</txt>
+				<alt is="F">Verdadeiro</alt>
+				<alt is="T">Falso.</alt>
+		</question>
+
+		<question>
+				<txt>Qual dos itens listados abaixo não se aplica como camada da engenharia de software?</txt>
+				<alt is="T">Manufatura.</alt>
+				<alt is="F">Ferramentas.</alt>
+				<alt is="F">Processos.</alt>
+				<alt is="F">Métodos.</alt>
+		</question>
+		
+		<question>
+				<txt>Qual desses não é um fator de produção que determina o grau de sucesso de um software?</txt>
+				<alt is="F">Pessoas.</alt>
+				<alt is="F">Tecnologia.</alt>
+				<alt is="T">Custo.</alt>
+				<alt is="F">Processos.</alt>
+		</question>
+
+	</fundamentos>
+<!--=====================================================================-->
+	<cmmi>
+
+		<question>
+				<txt>Qual dessas áreas não se relaciona ao nível 2 do CMMI?</txt>
+				<alt is="F">Medição e Análise.</alt>
+				<alt is="F">Planejamento de Projetos.</alt>
+				<alt is="T">Integração de Produto.</alt>
+				<alt is="F">Gestão de requisitos</alt>
+		</question>
+
+		<question>
+				<txt>Qual dessas áreas não se relaciona ao nível 3 do CMMI?</txt>
+				<alt is="T">Gerenciamento Quantitativo de Projeto.</alt>
+				<alt is="F">Validação.</alt>
+				<alt is="F">Desenvolvimento de Requisitos.</alt>
+				<alt is="F">Gerenciamento de Riscos.</alt>
+		</question>
+
+		<question>
+				<txt>Qual dessas áreas não se relaciona ao nível 2 do CMMI?</txt>
+				<alt is="F">Medição e Análise.</alt>
+				<alt is="F">Planejamento de Projetos.</alt>
+				<alt is="T">Integração de Produto.</alt>
+				<alt is="F">Gestão de requisitos</alt>
+		</question>
+
+		<question>
+				<txt>Qual dessas áreas não se relaciona ao nível 2 do CMMI?</txt>
+				<alt is="F">Medição e Análise.</alt>
+				<alt is="F">Planejamento de Projetos.</alt>
+				<alt is="T">Integração de Produto.</alt>
+				<alt is="F">Gestão de requisitos</alt>
+		</question>
+
+	</cmmi>
+<!--=====================================================================-->
+	<requisitos>
+		<question>
+				<txt>O que é prototipagem?</txt>
+				<alt is="F">É um requisito onde o engenheiro de software não tem acesso.</alt>
+				<alt is="T">É um meio de validar a interpretação que o engenheiro de software faz do requisito.</alt>
+				<alt is="F">É a versão final do sistema disponível apenas no fim do processo de  desenvolvimento.</alt>
+				<alt is="F">w</alt>
+		</question>
+
+	</requisitos>
+<!--=====================================================================-->
+	<teste>
+
+	</teste>
+<!--=====================================================================-->
+	<ciclodevida>
+
+
+	</ciclodevida>
+<!--=====================================================================-->
+	<arquitetura>
+
+		
+	</arquitetura>
+<!--=====================================================================-->
+	<design>
+
+		
+	</design>
+<!--=====================================================================-->
+	<metodologia>
+
+		
+	</metodologia>
+<!--=====================================================================-->
+	<qualidadesw>
+
+		
+	</qualidadesw>
+<!--=====================================================================-->
+	<desenvolvimentosw>
+
+		
+	</desenvolvimentosw>
+<!--=====================================================================-->
+	<manutencao>
+
+		
+	</manutencao>
+<!--=====================================================================-->
+	<gestao>
+
+		
+	</gestao>
+<!--=====================================================================-->
+
+	<estagiario>
+		<question>
+				<txt>Esta questão deverá ser sobre:</txt>
+				<alt is="F">Programador</alt>
+				<alt is="F">Analista</alt>
+				<alt is="T">Estagiário</alt>
+		</question>
+	</estagiario>
+<!--=====================================================================-->
+	<analista>
+		<question>
+				<txt>Esta questão deverá ser sobre:</txt>
+				<alt is="F">Outros</alt>
+				<alt is="F">Programador</alt>
+				<alt is="T">Analista</alt>
+				<alt is="F">Estagiário</alt>
+		</question>
+	</analista>
+<!--=====================================================================-->
+	<programador>
+		<question>
+				<txt>Esta questão deverá ser sobre:</txt>
+				<alt is="F">Outros</alt>
+				<alt is="T">Programador</alt>
+				<alt is="F">Analista</alt>
+				<alt is="F">Estagiário</alt>
+		</question>
+	</programador>
+<!--=====================================================================-->
+	<cmmi2>
+		<question>
+				<txt>Esta questão deverá ser sobre:</txt>
+				<alt is="T">CMMI2</alt>
+				<alt is="F">CMMI3</alt>
+				<alt is="F">CMMI4</alt>
+				<alt is="F">CMMI5</alt>
+		</question>
+	</cmmi2>
+<!--=====================================================================-->	
+	<cmmi3>
+		<question>
+				<txt>Esta questão deverá ser sobre:</txt>
+				<alt is="F">CMMI2</alt>
+				<alt is="T">CMMI3</alt>
+				<alt is="F">CMMI4</alt>
+				<alt is="F">CMMI5</alt>
+		</question>
+	</cmmi3>
+<!--=====================================================================-->
+	<cmmi4>
+		<question>
+				<txt>Esta questão deverá ser sobre:</txt>
+				<alt is="F">CMMI2</alt>
+				<alt is="F">CMMI3</alt>
+				<alt is="T">CMMI4</alt>
+				<alt is="F">CMMI5</alt>
+		</question>
+	</cmmi4>
+<!--=====================================================================-->
+	<cmmi5>
+		<question>
+				<txt>Esta questão deverá ser sobre:</txt>
+				<alt is="F">CMMI2</alt>
+				<alt is="F">CMMI3</alt>
+				<alt is="F">CMMI4</alt>
+				<alt is="T">CMMI5</alt>
+		</question>
+	</cmmi5>
+<!--=====================================================================-->
+
+</SoftClicker>
